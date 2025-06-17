@@ -1,11 +1,8 @@
-"""
-NVDA Global Plugin: Musical Keyboard
--------------------------------------
-This NVDA global plugin turns part of the keyboard into a musical instrument.
-When enabled, pressing certain keys will play musical notes using the tones module.
-The plugin can be toggled on or off with NVDA+Shift+L.
-"""
+# -*- coding: utf-8 -*-
+# Copyright (C) 2023-2025 pawan kumar <pawanpianoartist@gmail.com>
+# This file is covered by the GNU General Public License.
 
+# importing required modules
 import globalPluginHandler
 import tones
 import ui
@@ -14,7 +11,7 @@ import config
 from globalCommands import GlobalCommands as commands
 from scriptHandler import script
 
-
+# main class
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     # Tracks whether musical mode is enabled
     musicalMode = True
