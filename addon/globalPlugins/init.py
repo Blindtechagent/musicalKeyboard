@@ -21,7 +21,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         # Automatically toggle mode when the plugin is initialized
         self.script_toggleMode(None)
 
-    @script(description="Toggle the musical keyboard mode.")
+    @script(description="Toggle the musical keyboard mode.", category="Musical Keyboard")
     def script_toggleMode(self, gesture):
         self.musicalMode = not self.musicalMode
         self.script_toggleGestures()
